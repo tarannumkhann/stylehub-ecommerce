@@ -1,0 +1,211 @@
+.product-section {
+    width: 100%;
+  
+    max-width: 1440px;
+  
+    margin: 0 auto;
+  
+    padding: 65px 50px;
+  
+    overflow: hidden;
+  }
+  
+  
+  /* =====================================
+     HEADING
+  ===================================== */
+  
+  .section-heading {
+    display: flex;
+  
+    align-items: flex-end;
+  
+    justify-content: space-between;
+  
+    margin-bottom: 28px;
+  }
+  
+  .section-label {
+    margin: 0 0 6px;
+  
+    color: #d85c7a;
+  
+    font-size: 11px;
+    font-weight: 700;
+  
+    letter-spacing: 2.5px;
+  }
+  
+  .section-heading h2 {
+    margin: 0;
+  
+    color: #181818;
+  
+    font-size: 34px;
+    font-weight: 600;
+  
+    letter-spacing: -0.5px;
+  }
+  
+  
+  /* =====================================
+     ARROWS
+  ===================================== */
+  
+  .slider-controls {
+    display: flex;
+  
+    gap: 10px;
+  }
+  
+  .slider-arrow {
+    width: 45px;
+    height: 45px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border: 1px solid #dddddd;
+  
+    border-radius: 50%;
+  
+    background: #ffffff;
+  
+    color: #222222;
+  
+    cursor: pointer;
+  
+    transition: all 0.3s ease;
+  }
+  
+  .slider-arrow:hover {
+    background: #181818;
+    border-color: #181818;
+    color: #ffffff;
+  }
+  
+  
+  /* =====================================
+     MAIN SLIDER
+  ===================================== */
+  
+  .products-slider {
+    display: flex;
+  
+    gap: 22px;
+  
+    width: 100%;
+  
+    overflow-x: auto;
+  
+    scroll-behavior: smooth;
+  
+    scroll-snap-type: x mandatory;
+  
+   
+  
+    padding: 5px 2px 20px;
+  }
+  
+  .products-slider::-webkit-scrollbar {
+    display: none;
+  }
+  
+  
+  /* =====================================
+     DESKTOP
+     EXACTLY 4 CARDS
+  ===================================== */
+  
+  .product-item {
+    flex: 0 0 calc((100% - 66px) / 4);
+  
+    scroll-snap-align: start;
+  }
+  
+  
+  /* =====================================
+     TABLET
+     EXACTLY 3 CARDS
+  ===================================== */
+  
+  @media (max-width: 1024px) {
+  
+    .product-section {
+      padding: 50px 30px;
+    }
+  
+    .product-item {
+      flex: 0 0 calc((100% - 44px) / 3);
+    }
+  
+  }
+  
+  
+  /* =====================================
+     MOBILE
+     EXACTLY 2 CARDS
+  ===================================== */
+  
+  @media (max-width: 640px) {
+  
+    .product-section {
+      padding: 40px 15px;
+    }
+  
+    .section-heading {
+      margin-bottom: 20px;
+    }
+  
+    .section-label {
+      font-size: 9px;
+      letter-spacing: 1.8px;
+    }
+  
+    .section-heading h2 {
+      font-size: 25px;
+    }
+  
+    .slider-controls {
+      gap: 6px;
+    }
+  
+    .slider-arrow {
+      width: 36px;
+      height: 36px;
+    }
+  
+    .products-slider {
+      gap: 12px;
+  
+      padding-bottom: 15px;
+    }
+  
+    .product-item {
+      flex: 0 0 calc((100% - 12px) / 2);
+    }
+  
+  }
+  
+  
+  /* =====================================
+     SMALL PHONE
+  ===================================== */
+  
+  @media (max-width: 400px) {
+  
+    .section-heading h2 {
+      font-size: 22px;
+    }
+  
+    .slider-arrow {
+      width: 33px;
+      height: 33px;
+    }
+  
+    .product-item {
+      flex: 0 0 calc((100% - 10px) / 2);
+    }
+  
+  }

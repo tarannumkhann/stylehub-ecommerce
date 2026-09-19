@@ -1,0 +1,270 @@
+.product-card {
+    width: 100%;
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #eeeeee;
+  
+    transition:
+      transform 0.35s ease,
+      box-shadow 0.35s ease;
+  
+    flex-shrink: 0;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.10);
+  }
+  
+  
+  /* =====================================
+     IMAGE
+  ===================================== */
+  
+  .product-image-box {
+    position: relative;
+    width: 100%;
+    height: 330px;
+  
+    background: #f7f4f2;
+  
+    overflow: hidden;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 100%;
+  
+    object-fit: cover;
+  
+    display: block;
+  
+    transition: transform 0.6s ease;
+  }
+  
+  .product-card:hover .product-image {
+    transform: scale(1.05);
+  }
+  
+  
+  /* =====================================
+     DISCOUNT
+  ===================================== */
+  
+  .discount-label {
+    position: absolute;
+  
+    top: 15px;
+    left: 15px;
+  
+    background: #171717;
+    color: #ffffff;
+  
+    padding: 7px 11px;
+  
+    border-radius: 30px;
+  
+    font-size: 11px;
+    font-weight: 700;
+  
+    letter-spacing: 0.5px;
+  }
+  
+  
+  /* =====================================
+     WISHLIST
+  ===================================== */
+  
+  .wishlist-btn {
+    position: absolute;
+  
+    top: 13px;
+    right: 13px;
+  
+    width: 38px;
+    height: 38px;
+  
+    border: none;
+  
+    border-radius: 50%;
+  
+    background: rgba(255, 255, 255, 0.92);
+  
+    font-size: 21px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    cursor: pointer;
+  
+    transition: all 0.3s ease;
+  }
+  
+  .wishlist-btn:hover {
+    background: #171717;
+    color: white;
+  }
+  
+  
+  /* =====================================
+     DETAILS
+  ===================================== */
+  
+  .product-details {
+    padding: 18px 17px 17px;
+  }
+  
+  .product-name {
+    margin: 0 0 10px;
+  
+    color: #1c1c1c;
+  
+    font-size: 16px;
+    font-weight: 600;
+  
+    line-height: 1.4;
+  
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  
+  /* =====================================
+     PRICE
+  ===================================== */
+  
+  .product-price-row {
+    display: flex;
+    align-items: center;
+  
+    gap: 9px;
+  
+    margin-bottom: 15px;
+  }
+  
+  .product-price {
+    color: #171717;
+  
+    font-size: 19px;
+    font-weight: 700;
+  }
+  
+  .product-old-price {
+    color: #999999;
+  
+    font-size: 13px;
+  
+    text-decoration: line-through;
+  }
+  
+  
+  /* =====================================
+     ADD CART
+  ===================================== */
+  
+  .add-cart-btn {
+    width: 100%;
+  
+    height: 43px;
+  
+    border: 1px solid #171717;
+  
+    border-radius: 10px;
+  
+    background: #171717;
+    color: #ffffff;
+  
+    font-size: 13px;
+    font-weight: 600;
+  
+    cursor: pointer;
+  
+    transition: all 0.3s ease;
+  }
+  
+  .add-cart-btn:hover {
+    background: #ffffff;
+    color: #171717;
+  }
+  
+  
+  /* =====================================
+     TABLET
+  ===================================== */
+  
+  @media (max-width: 1024px) {
+  
+    .product-image-box {
+      height: 290px;
+    }
+  
+    .product-details {
+      padding: 15px;
+    }
+  
+  }
+  
+  
+  /* =====================================
+     MOBILE
+  ===================================== */
+  
+  @media (max-width: 640px) {
+  
+    .product-card {
+      border-radius: 15px;
+    }
+  
+    .product-image-box {
+      height: 230px;
+    }
+  
+    .product-details {
+      padding: 13px;
+    }
+  
+    .product-name {
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+  
+    .product-price {
+      font-size: 17px;
+    }
+  
+    .product-old-price {
+      font-size: 11px;
+    }
+  
+    .product-price-row {
+      gap: 6px;
+      margin-bottom: 11px;
+    }
+  
+    .add-cart-btn {
+      height: 38px;
+      font-size: 12px;
+    }
+  
+    .discount-label {
+      top: 10px;
+      left: 10px;
+  
+      padding: 5px 8px;
+  
+      font-size: 9px;
+    }
+  
+    .wishlist-btn {
+      width: 32px;
+      height: 32px;
+  
+      top: 9px;
+      right: 9px;
+  
+      font-size: 18px;
+    }
+  }
