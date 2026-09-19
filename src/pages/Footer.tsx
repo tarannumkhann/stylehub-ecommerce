@@ -34,7 +34,7 @@ import {
   
             {/* SHOP */}
             <div>
-              <h3 className="mb-4 text-sm font-semibold uppercase tracking-[0.15em]">
+              <h3 className="mb-4 text-xl font-bold uppercase tracking-[0.15em]">
                 Shop
               </h3>
   
@@ -66,7 +66,7 @@ import {
   
             {/* QUICK LINKS */}
             <div>
-              <h3 className="mb-4 text-sm font-semibold uppercase tracking-[0.15em]">
+              <h3 className="mb-4 text-xl font-bold uppercase tracking-[0.15em]">
                 Quick Links
               </h3>
   
@@ -98,7 +98,7 @@ import {
   
             {/* CONTACT */}
             <div>
-              <h3 className="mb-4 text-sm font-semibold uppercase tracking-[0.15em]">
+              <h3 className="mb-4 text-xl font-bold uppercase tracking-[0.15em]">
                 Contact Us
               </h3>
   
