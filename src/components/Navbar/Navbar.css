@@ -185,15 +185,42 @@
   /* ================= MOBILE MENU ================= */
   
   .mobile-menu {
-    display: none;
+    position: absolute;
+    top: 68px;
+    right: 12px;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
   }
-  
   
   /* ==================================================
      MOBILE
   ================================================== */
   
   @media (max-width: 768px) {
+
+    @media (max-width: 768px) {
+        .mobile-menu {
+          position: absolute;
+          top: 62px;
+          right: 12px;
+          width: 230px;
+          display: flex;
+          flex-direction: column;
+          padding: 10px;
+          background: #ffffff;
+          border: 1px solid #eeeeee;
+          border-radius: 12px;
+          box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+          box-sizing: border-box;
+        }
+      }
   
     .navbar-container {
       height: 62px;

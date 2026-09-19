@@ -72,44 +72,41 @@ function Navbar() {
 
       {/* MOBILE MENU */}
       {menuOpen && (
-        <div className="mobile-menu">
+  <div className="mobile-menu">
 
-          <Link to="/" onClick={() => setMenuOpen(false)}>
-            Home
-          </Link>
+    <div className="mobile-search-box">
+      <Search size={18} />
+      <input
+        type="text"
+        placeholder="Search products..."
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+      />
+    </div>
 
-          <Link to="/about" onClick={() => setMenuOpen(false)}>
-            About
-          </Link>
+    <Link to="/" onClick={() => setMenuOpen(false)}>
+      Home
+    </Link>
 
-          <Link to="/products" onClick={() => setMenuOpen(false)}>
-            Products
-          </Link>
+    <Link to="/about" onClick={() => setMenuOpen(false)}>
+      About
+    </Link>
 
-          {/* MOBILE SEARCH */}
-          <div className="mobile-search-box">
-            <Search size={18} />
+    <Link to="/products" onClick={() => setMenuOpen(false)}>
+      Products
+    </Link>
 
-            <input
-              type="text"
-              placeholder="Search products..."
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-            />
-          </div>
+    <Link
+      to="/login"
+      className="mobile-login"
+      onClick={() => setMenuOpen(false)}
+    >
+      <User size={18} />
+      Login
+    </Link>
 
-          {/* MOBILE LOGIN */}
-          <Link
-            to="/login"
-            className="mobile-login"
-            onClick={() => setMenuOpen(false)}
-          >
-            <User size={18} />
-            Login
-          </Link>
-
-        </div>
-      )}
+  </div>
+)}
 
     </nav>
   );

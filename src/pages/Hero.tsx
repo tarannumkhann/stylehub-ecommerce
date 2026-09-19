@@ -20,7 +20,7 @@ const Hero = () => {
   }, [slide]);
 
   return (
-    <section className="relative h-[58vh] min-h-[430px] overflow-hidden bg-pink-100 sm:h-[65vh] sm:min-h-[480px] lg:h-[70vh] lg:min-h-[520px]">
+    <section className="relative h-auto min-h-[650px] overflow-hidden bg-pink-100 sm:h-[65vh] sm:min-h-[480px] lg:h-[70vh] lg:min-h-[520px]">
 
       {/* ================= FIRST SLIDE ================= */}
       <div
@@ -28,8 +28,7 @@ const Hero = () => {
           slide === 0 ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-       <div className="mx-auto flex h-full max-w-7xl flex-col-reverse items-center justify-end gap-0 px-4 pb-1 pt-2 sm:gap-3 sm:px-8 sm:py-6 lg:flex-row lg:justify-between lg:gap-12 lg:px-10 lg:py-0">
-
+       <div className="mx-auto flex min-h-[650px] max-w-7xl flex-col-reverse items-center justify-center gap-2 px-4 py-4 sm:min-h-0 sm:gap-3 sm:px-8 sm:py-6 lg:flex-row lg:justify-between lg:gap-12 lg:px-10 lg:py-0">
 {/* TEXT SECTION */}
 <div className="flex w-full flex-col justify-center text-center lg:w-1/2 lg:text-left">
 
@@ -56,15 +55,7 @@ const Hero = () => {
   <img
     src={Logo}
     alt="R N Son Fashion"
-    className="
-      h-[360px]
-      w-auto
-      object-contain
-      sm:h-[380px]
-      md:h-[420px]
-      lg:h-[500px]
-      xl:h-[560px]
-    "
+    className="h-[340px] w-auto object-contain sm:h-[380px] md:h-[420px] lg:h-[500px] xl:h-[560px]"
   />
 </div>
 
